@@ -1,8 +1,8 @@
 import { Developer } from "./Developer";
-import { GitHub } from "./GitHub";
+import { GitHub } from "./Buttons/GitHubButton";
 import { IAm } from "./IAm";
 import { IuriSilva } from "./IuriSilva";
-import { Linkedin } from "./Linkedin";
+import { Linkedin } from "./Buttons/LinkedinButton";
 import { Polygon } from "./Polygon";
 
 export default function Init() {

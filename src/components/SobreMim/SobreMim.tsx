@@ -7,6 +7,8 @@ import { Title } from "./Title";
 import { Twitch } from "./Icons/Twitch";
 import { Twiter } from "./Icons/Twiter";
 import { YouTube } from "./Icons/YouTube";
+import { CurrículoButton } from "./Buttons/CurrículoButton";
+import { EMail } from "./Buttons/EMailButton";
 
 export default function SobreMim() {
     return (
@@ -26,14 +28,13 @@ export default function SobreMim() {
                     <Facebook />
                 </div>
                 <div className="flex gap-5 mt-16">
-                    <div className="border-transparent bg-gradient-to-tr to-purple-700 from-pink-600 rounded-md p-px w-40 text-center">
-                        <button className="bg-zinc-800 w-full rounded-md h-10">Currículo</button>
-                    </div>
-                    <div className="border-transparent bg-gradient-to-bl to-purple-700 from-cyan-400 rounded-md p-px w-40 text-center">
-                        <button className="bg-zinc-800 w-full rounded-md h-10">Currículo</button>
-                    </div>
+                    <CurrículoButton />
+                    <EMail />
                 </div>
             </div>
         </div>
     )
 }
+
+
+
