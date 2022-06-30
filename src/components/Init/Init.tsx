@@ -3,11 +3,12 @@ import { GitHub } from "./GitHub";
 import { IAm } from "./IAm";
 import { IuriSilva } from "./IuriSilva";
 import { Linkedin } from "./Linkedin";
+import { Polygon } from "./Polygon";
 
 export default function Init() {
     return (
         <div className="flex">
-            <div className="w-1/2 h-screen bg-zinc-900 pl-52 pt-48 leading-10">
+            <div className="w-1/2 h-screen bg-zinc-800 pl-52 pt-48 leading-10">
                 <IAm />
                 <IuriSilva />
                 <Developer />
@@ -16,13 +17,12 @@ export default function Init() {
                     <GitHub />
                 </div>
             </div>
-            <div className="w-1/2 h-screen bg-zinc-900">
-                <div className="w-full flex">
-                    <img src="./assets/Looper.svg" className="" />
-                </div>
+            <div className="w-1/2 h-screen bg-zinc-800">
+                <Polygon />
             </div>
         </div>
     )
 }
+
 
 
