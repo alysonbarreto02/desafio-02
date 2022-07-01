@@ -3,6 +3,7 @@ import Head from '../components/Head/Head'
 import Init from '../components/Init/Init'
 import SobreMim from '../components/SobreMim/SobreMim'
 import Experiencias from "../components/Experiencias/Experiencias"
+import Projetos from '../components/Projetos/Projetos'
 
 const Home: NextPage = () => {
   return (
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
       <Init />
       <SobreMim />
       <Experiencias />
+      <Projetos />
     </div>
   )
 }
