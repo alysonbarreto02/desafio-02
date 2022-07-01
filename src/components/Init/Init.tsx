@@ -8,7 +8,7 @@ import { Polygon } from "./Polygon";
 export default function Init() {
     return (
         <div className="flex">
-            <div className="w-1/2 h-screen bg-zinc-800 pl-52 pt-48 leading-10">
+            <div className="w-1/2 bg-zinc-800 pl-52 pt-48 leading-10">
                 <IAm />
                 <IuriSilva />
                 <Developer />
@@ -17,7 +17,7 @@ export default function Init() {
                     <GitHub />
                 </div>
             </div>
-            <div className="w-1/2 h-screen bg-zinc-800">
+            <div className="w-1/2  bg-zinc-800">
                 <Polygon />
             </div>
         </div>
