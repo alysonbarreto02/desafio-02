@@ -7,7 +7,7 @@ const Projects = [
 
 export default function Projetos() {
     return (
-        <div className="w-full h-full bg-zinc-800 px-48 pt-16">
+        <div className="w-full h-full bg-zinc-800 px-24 pt-16">
             <Title/>
             <div className="flex gap-2">
                 <Project/>
