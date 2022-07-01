@@ -28,6 +28,14 @@ export default function Experiencias() {
                     <Date />
                 </div>
                 <EmpresaCitada />
+                <div className="w-2/3 mt-4">
+                    <p className="text-zinc-400">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corr
+                        upti et perferendis perspiciatis earum eveniet. Ex inc
+                        idunt soluta quis veritatis ut, sequi adipisci natus,
+                        quo, quidem in quae fugit suscipit autem!
+                    </p>
+                </div>
             </div>
 
         </div>
