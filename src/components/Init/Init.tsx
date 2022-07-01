@@ -17,7 +17,7 @@ export default function Init() {
                     <GitHub />
                 </div>
             </div>
-            <div className="w-1/2  bg-zinc-800">
+            <div className="w-1/2 bg-zinc-800">
                 <Polygon />
             </div>
         </div>
