@@ -1,25 +1,55 @@
+import { useState } from "react"
 import { Date } from "./Date"
 import { EmpresaCitada } from "./EmpresaCitada"
-import { Empresas } from "./Empresas"
+import { Empresa } from "./Empresa"
 import { Profissao } from "./Profissao"
 import { Titulo } from "./Titulo"
 
 const empresas = [
-    { nome: "Digital House" },
-    { nome: "Código Fonte TV" },
-    { nome: "Zuplae" },
-    { nome: "ContWeb" },
-    { nome: "iuricode" },
-    { nome: "Freelancer" }
+    {
+        name: "Digital House",
+        id: 1,
+    },
+    {
+        name: "Código Fonte TV",
+        id: 2,
+    },
+    {
+        name: "Zuplae",
+        id: 3,
+    },
+    {
+        name: "ContWeb",
+        id: 4,
+    },
+    {
+        name: "iuricode",
+        id: 5,
+    },
+    {
+        name: "Freelancer",
+        id: 6,
+    }
 ]
 
+
 export default function Experiencias() {
+
+    const [clicked, setClicked] = useState(2)
+
     return (
         <div className="w-full bg-zinc-800 flex">
             <div className="px-48">
                 <Titulo />
                 <div className="mt-10 border-l border-zinc-600">
-                    {empresas.map((empresas, index) => <Empresas name={empresas.nome} key={index} />)}
+                    {
+                        empresas.map((empresa, index) =>
+                            <Empresa
+                                clicked={clicked}
+                                changeClicked={setClicked}
+                                empresa={empresa}
+                                key={index} />
+                        )}
                 </div>
             </div>
             <div className="mt-16 ">
